@@ -1,0 +1,13 @@
+{
+  "description": "clickbait",
+  "version": "2.0",
+  "name": "clickbait",
+  "content_scripts": [
+    {
+      "matches": ["https://www.bbc.co.uk/news", "https://www.bbc.co.uk/"],
+      "run_at": "document_end",
+      "js": ["contentScript.js"]
+    }
+  ],
+  "manifest_version": 2
+}
